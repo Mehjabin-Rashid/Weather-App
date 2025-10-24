@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"/>
+<!-- default css -->
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- main start -->
+     <main>
+        <section class="weather">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="search-weather text-center py-5">
+                            <div class="weather-text mb-3 text-white">
+                                <h2>Current Weather App</h2>
+                            </div>
+                            <div class="weather-form">
+                                <div class="input-group">
+                                    <input 
+                                    id="search-city"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter city name (e.g., London, Tokyo, New York)"
+                                    >
+
+                                    <button 
+                                    id="search-button"
+                                    onclick="searchButton()"
+                                    class="btn btn-danger"
+                                  >
+                                    <span>🔍</span> Search
+                                    </button>
+                                </div>
+                                <div id="empty-input"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- another row -->
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <div id="container" class="weather-details text-center"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+    
+<!-- Js files -->
+ <script src="./index.js"></script>
+
+</body>
+</html>
